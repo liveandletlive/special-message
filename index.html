@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>SPECIAL MESSAGE</title>
+
+    <style>
+      section {
+        background-image: url("aaa.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+      }
+      .mcardq {
+        background-color: #fff;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 10px;
+      }
+
+      .mcardq .q h2 {
+        font-family: "Oswald", sans-serif;
+        font-size: 26px;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #373737;
+        letter-spacing: 1px;
+      }
+
+      .mcardq .q p {
+        font-size: 16px;
+        font-weight: 400;
+        color: #373737;
+        font-family: "Poppins", sans-serif;
+        margin: 20px 0;
+        letter-spacing: 0.5px;
+      }
+
+      .mcardq .btn {
+        width: 40%;
+      }
+      .mcardq .q .btn-no {
+        background-color: #d960ae;
+        color: #fff;
+      }
+      .mcardq .q .btn-yes {
+        background-color: #eddfeb;
+        color: #373737;
+      }
+
+      .mcardn {
+        background-color: #fff;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 10px;
+      }
+
+      .mcardn .n h2 {
+        font-family: "Oswald", sans-serif;
+        font-size: 26px;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #373737;
+        letter-spacing: 1px;
+      }
+
+      .mcardn .n p {
+        font-size: 16px;
+        font-weight: 400;
+        color: #373737;
+        font-family: "Poppins", sans-serif;
+        margin: 20px 0;
+        letter-spacing: 0.5px;
+      }
+
+      .mcardn .btn {
+        width: 40%;
+      }
+      .mcardn .n .btn-back {
+        background-color: #d960ae;
+        color: #fff;
+      }
+
+      .mcardy {
+        background-color: #fff;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 10px;
+      }
+
+      .mcardy .y h2 {
+        font-family: "Oswald", sans-serif;
+        font-size: 26px;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #373737;
+        letter-spacing: 1px;
+      }
+
+      .mcardy .y p {
+        font-size: 16px;
+        font-weight: 400;
+        color: #373737;
+        font-family: "Poppins", sans-serif;
+        margin: 20px 0;
+        letter-spacing: 0.5px;
+      }
+
+      .mcardy .y .btn-back {
+        background-color: #d960ae;
+        color: #fff;
+        width: 30%;
+      }
+
+      .mcardy .y .btn-msg {
+        background-color: #eddfeb;
+        color: #373737;
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 m-auto pt-5">
+            <div class="mcardq py-5 px-4" id="q">
+              <div class="q text-center">
+                <img class="img-fluid w-75 mb-4" src="q.jpg" alt="" />
+                <h2>Do you love me?</h2>
+                <p>If you say no, you will stop receiving calls from me.</p>
+                <button type="button" id="shown" class="btn btn-no">NO</button>
+                <button type="button" id="showy" class="btn btn-yes">
+                  YES
+                </button>
+              </div>
+            </div>
+            <div class="mcardn py-5 px-4" id="n" style="display: none">
+              <div class="n text-center">
+                <img class="img-fluid w-75 mb-4" src="n.jpg" alt="" />
+                <h2>You made me sad!</h2>
+                <p>You no longer receive any hugs from me.</p>
+                <button type="button" class="btn btn-back">GO BACK</button>
+              </div>
+            </div>
+            <div class="mcardy py-5 px-4" id="y" style="display: none">
+              <div class="y text-center">
+                <img class="img-fluid w-75 mb-4" src="y.jpg" alt="" />
+                <h2>Thanks for staying with me!</h2>
+                <p>You will continue receiving my love. Yay!</p>
+                <button type="button" class="btn btn-back">GO BACK</button>
+                <a href="msg.html"
+                  ><button type="button" class="btn btn-msg">
+                    READ MESSAGE
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".btn-back").click(function () {
+          $("#q").css("display", "block");
+          $("#n").css("display", "none");
+          $("#y").css("display", "none");
+        });
+        $("#shown").click(function () {
+          $("#q").css("display", "none");
+          $("#n").css("display", "block");
+          $("#y").css("display", "none");
+        });
+        $("#showy").click(function () {
+          $("#q").css("display", "none");
+          $("#n").css("display", "none");
+          $("#y").css("display", "block");
+        });
+      });
+    </script>
+  </body>
+</html>
